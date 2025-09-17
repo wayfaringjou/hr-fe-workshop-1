@@ -15,6 +15,9 @@ import { RouterLink } from "vue-router";
         <li>
             <RouterLink to="/stateless-stateful">Stateful/stateless</RouterLink>
         </li>
+        <li>
+            <RouterLink to="/resources">Recursos</RouterLink>
+        </li>
     </ul>
 </template>
 

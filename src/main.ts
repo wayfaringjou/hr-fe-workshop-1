@@ -3,4 +3,13 @@ import { createApp } from 'vue';
 import { router } from './router';
 import './global.css';
 
-createApp(App).use(router).mount('#app');
+const app = createApp(App)
+app.use(router)
+
+async function prepareApp() {
+    const { worker } = await import("./mocks/browser");
+    return worker.start();
+}
+
+prepareApp().then(() => app.mount("#app"));
+

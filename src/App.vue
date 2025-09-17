@@ -23,6 +23,7 @@ import { RouterLink, RouterView } from "vue-router";
     height: 100%;
     width: 100%;
     padding-block-start: 3rem;
+    overflow-y: scroll;
 }
 </style>
 
