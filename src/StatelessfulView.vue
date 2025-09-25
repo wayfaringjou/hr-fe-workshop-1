@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import CompaniesTable from "./components/CompaniesTable.vue";
+import StatefulCompaniesTable from "./components/StatefulCompaniesTable.vue";
+import StatelessCompaniesTable from "./components/StatelessCompaniesTable.vue";
 </script>
 <template>
     <section>
         <h2>Setting state in memory</h2>
-        <CompaniesTable />
+        <StatefulCompaniesTable />
     </section>
     <section>
         <h2>Reading state from parameters</h2>
-        <CompaniesTable />
+        <StatelessCompaniesTable />
     </section>
 </template>
 

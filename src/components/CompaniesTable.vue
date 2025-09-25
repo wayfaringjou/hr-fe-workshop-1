@@ -4,9 +4,11 @@ import DataCell from "./DataTable/DataCell.vue";
 import DataHeader from "./DataTable/DataHeader.vue";
 import DataRow from "./DataTable/DataRow.vue";
 import DataTable from "./DataTable/DataTable.vue";
+
+const { sort = "asc" } = defineProps<{ sort?: "asc" | "desc" }>();
 </script>
 <template>
-    <CompaniesDataManager v-slot="{ data }">
+    <CompaniesDataManager :sort="sort" v-slot="{ data }">
         <DataTable v-if="data.length > 0">
             <DataRow>
                 <DataHeader
